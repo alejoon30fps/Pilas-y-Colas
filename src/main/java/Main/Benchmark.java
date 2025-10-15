@@ -29,12 +29,12 @@ public class Benchmark {
         runQueueBench(new LinkedQueue<Integer>(), "LinkedQueue", out);
 
         out.close();
-        System.out.println("Benchmark completado. Resultados guardados en results.csv");
+        System.out.println("✅ Benchmark completado. Resultados guardados en results.csv");
     }
 
     // -------------------- PILAS --------------------
     private static void runStackBench(MyStack<Integer> stack, String name, PrintWriter out) {
-        System.out.println("\n Probando " + name);
+        System.out.println("\n📦 Probando " + name);
         for (int N : SIZES) {
             System.out.println("   → N = " + N);
             simplePushPop(stack, 1000); // warm-up
@@ -50,7 +50,7 @@ public class Benchmark {
 
     // -------------------- COLAS --------------------
     private static void runQueueBench(MyQueue<Integer> queue, String name, PrintWriter out) {
-        System.out.println("\n Probando " + name);
+        System.out.println("\n📬 Probando " + name);
         for (int N : SIZES) {
             System.out.println("   → N = " + N);
             simpleEnqueueDequeue(queue, 1000);

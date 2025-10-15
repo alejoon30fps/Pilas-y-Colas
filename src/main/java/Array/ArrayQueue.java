@@ -17,9 +17,9 @@ public class ArrayQueue<T> implements MyQueue<T> {
     private int head, tail, size;
 
     public ArrayQueue() {
-        Scanner sc = new Scanner(System.in);
+        
         //Se coloca un size del arreglo 
-        int tamano = sc.nextInt();
+        int tamano = 2;
         a = new Object[tamano];
     }
 

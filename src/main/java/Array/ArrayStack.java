@@ -10,10 +10,10 @@ public class ArrayStack<T> implements MyStack<T> {
     private int n;
 
     public ArrayStack() {
-        Scanner sc = new Scanner(System.in);
+        
         
         //Se coloca un size del arreglo 
-        int tamano = sc.nextInt();
+        int tamano = 2;
         a = new Object[tamano];
         
         n = 0; 

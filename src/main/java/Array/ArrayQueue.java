@@ -10,16 +10,16 @@ package Array;
  */
 import Interfaces.MyQueue;
 import java.util.NoSuchElementException;
-import java.util.Scanner;
+
 
 public class ArrayQueue<T> implements MyQueue<T> {
     private Object[] a;
     private int head, tail, size;
 
     public ArrayQueue() {
-        Scanner sc = new Scanner(System.in);
+        
         //Se coloca un size del arreglo 
-        int tamano = sc.nextInt();
+        int tamano = 1;
         a = new Object[tamano];
     }
 

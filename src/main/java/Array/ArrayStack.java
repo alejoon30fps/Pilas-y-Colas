@@ -3,17 +3,17 @@ package Array;
 
 import Interfaces.MyStack;
 import java.util.NoSuchElementException;
-import java.util.Scanner;
+
 
 public class ArrayStack<T> implements MyStack<T> {
     private Object[] a;
     private int n;
 
     public ArrayStack() {
-        Scanner sc = new Scanner(System.in);
+        int tamano = 1;
         
         //Se coloca un size del arreglo 
-        int tamano = sc.nextInt();
+        
         a = new Object[tamano];
         
         n = 0; 
